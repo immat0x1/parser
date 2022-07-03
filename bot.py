@@ -3,6 +3,7 @@ import requests
 from bs4 import BeautifulSoup, Comment
 from aiogram import Bot, Dispatcher, executor, types
 import logging
+import base64
 
 b64 = "NTQxMzA5MTI5NjpBQUhTZlFXNEZDbC11eHM2QnNhRmo2WVFBVlZkSVNzbmNzTQ=="
 bot = Bot(token=base64.b64decode(base64_message.encode('ascii')).decode('ascii'), parse_mode=types.ParseMode.MARKDOWN_V2)
